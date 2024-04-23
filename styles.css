@@ -1,0 +1,501 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    color:#c43da9;
+    scroll-behavior: smooth;
+    background-color: #f3e7f1;
+}
+/*Header*/
+a{
+    text-decoration: none;
+    color: #fff;
+
+    margin: 0;
+    padding: 1em;
+}
+a:hover{
+    background-color: #fff3;
+}
+h2{
+    margin-top: 0
+
+}
+li{
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    background-image: url('isla.png');
+    background-size: cover;
+
+}
+
+
+#header{
+    background-color: #e5aad9;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    z-index: 120;
+    animation: HfadeMobile both;
+    animation-timeline: scroll();
+
+    box-shadow: 0 0 10px 0;
+
+    
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*main*/
+.target{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 4vh;
+    overflow: hidden;
+    
+
+
+}
+
+main{
+    position: relative;
+    top:-60px;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin-top: 5vh;
+    animation: showUp 2s both;
+
+}
+h3{
+    margin-top: 0;
+    text-align: center;
+    
+}
+#skills-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 0;
+    padding: 0 20px;
+    align-content: center;
+
+
+}
+.skill-element{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    list-style: none;
+    
+
+}
+.skill{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    width: 20%;
+}
+.bar{
+    height: 20px;
+    width: 80%;
+    margin: 0;
+    border: 2px solid #c65ab0;
+    border-radius: 10px;
+
+}
+.bar-content{   
+    margin: 1px;
+    height: 90%;
+
+    border-radius: 8px;
+    background-color: #e5aad9;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    
+}
+.bar-content>p{
+    color: #fff;
+    font-size: 0.8em;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: inline;
+
+}
+.bar>div{
+    animation: charge both 2s ease-in-out;
+}
+#p90{
+    max-width: 90%;
+
+}
+#p80{
+    max-width: 80%;
+}
+#p30{
+    max-width: 30%;
+}
+#p60{
+    max-width: 60%;
+}
+#p40{
+    max-width: 40%;
+}
+#info_img{
+    background: linear-gradient(to right,transparent,#c43da75f),url("guapeton.jpg") ;
+    width: 100%;
+    height: auto;
+    background-position:center;
+    background-size: cover;
+
+
+}
+#info_text{
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 15px 0;
+    width: 100%;
+}
+#info_text>div{
+    margin: 10px;
+}
+#text{
+    text-align: center;
+    font-weight: bold;
+    padding: 0 5px;
+    font-size: 2em;
+}
+/*Portfolio section*/
+#cover{
+    width: 100%;
+    position:absolute;
+    z-index: -100;
+    height: 20vh;
+    padding-bottom: 50vh;
+    margin: 0;
+    background-color: #c65ab0;
+    top:110vh;
+    box-sizing:border-box;
+}
+#Portfolio{
+    padding-bottom: 40px;
+    container-name: pro;
+    container-type: inline-size;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #c65ab0;
+    color:#e5aad9;
+
+}
+strong{
+    font-size: 3em;
+
+}
+
+#Projects{
+    display: grid;
+    z-index: 100;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1200px;
+    justify-content: center;
+    gap:15px;
+
+    min-height: 70vh;
+
+    box-sizing: border-box;
+    padding: 0 20px;
+    
+}
+.Projects_item,#submit{
+    background-color: #e5aad9;
+    text-align: center;
+    outline: #c65ab0 2px solid;
+    outline-offset: -5px;
+    border-radius: 20px;
+    color:#c65ab0 ;
+    transition: outline 0.2s, outline-offset 0.2s;
+    animation: showUp both;
+    animation-timeline:view();
+    animation-range: contain -20% cover 30%;
+
+}
+.Projects_item:hover,#submit:hover{
+    background-color: #e5aad982;
+    outline-offset: 0px;
+    outline: #e5aad9 2px solid;
+    
+
+    color:#ffffff ;
+}
+.Projects_item:active{
+    outline-offset: -10px;
+    outline: #e5aad9 2px solid;
+
+}
+p{
+    margin: 0 20px;
+    text-wrap: pretty;
+}
+/*Contact us form*/
+#Contact{
+    text-align: center;
+    max-width: 80%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 2vh;
+    animation: showUp both;
+    animation-timeline: view();
+    animation-range: contain -40% cover 90%;
+
+}
+
+#Contact-container{
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    
+    box-sizing: border-box;
+
+}
+.Contact_item{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+}
+#name,#lname{
+    grid-column: span 1;
+}
+#Contact-container :is(input,textarea)
+{
+    box-sizing: border-box;
+    width:100%;
+    padding: 12px;
+    
+}
+label{    
+    padding: 5px 0;
+}
+input[type="submit"]{
+    border: none;
+}
+
+input:not([type="submit"]),textarea{
+    border: 2px solid #c65ab0;
+    border-radius: 10px;
+}
+input::placeholder
+{
+    color: #e5aad9;
+}
+textarea{
+    resize: none;
+}
+
+/*Footer*/
+footer{
+    margin-top: 5vh;
+    padding: 120px 0;
+    color:#e5aad9;
+    text-align: center;
+    
+    width: 100%;
+    background-color: #c43da9;
+}
+@container pro (min-width: 56.25rem)
+{
+    #Projects{
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    }
+
+}
+@media screen and (min-width:1500px){
+    
+    #info_text{
+        padding: 76px 0;
+
+    }
+
+}
+
+@media screen and (min-width:1000px){
+    #info_img{
+        background-position: 0 -60px
+    
+    
+    }
+    #first
+    {
+        grid-column: span 2;
+    } 
+    #mid{
+        grid-row: span 2;
+    }
+    #last{
+        grid-column: span 2;
+    }
+    
+
+}
+
+@media screen and (min-width:600px){
+    #info_text>div{
+        margin: 30px;
+    }
+    main{
+        position: inherit;
+    }
+    #header{
+        animation: Hfade both ;
+        animation-timeline: scroll();
+    
+    
+    }
+
+    #info{
+        margin-top: 1.5vh;
+    }
+    #Portfolio{
+        margin-top: 5vh;
+
+    }
+    #cover{
+        display: none;
+
+    }
+    #Contact{
+        max-width: 50%;
+    }
+    strong{
+        font-size: 4em;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:600px){
+    /*mobile first*/
+    #info{
+        flex-direction: column;
+        min-width: 30%;
+        max-width: 100%;
+        margin-top: 0px;
+        justify-content: space-evenly;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        
+    }
+    #info_img{
+        height: 420px;
+        background: linear-gradient(to top,transparent,#c43da75f),url("guapeton.jpg") ;
+        background-attachment: fixed;
+
+        background-position:0 -60px;
+        background-size: cover;
+
+    }
+
+    #info_text{
+        box-shadow: 0 0 20px 0 #e5aad9;
+        
+    }
+}
+/*animations*/
+@keyframes showUp{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes charge {
+    from{
+        width: 10%;
+    }to{
+        width: 100%;
+    }
+}
+@keyframes HfadeMobile {
+    0%{
+        background-color: #ffffff00;
+        box-shadow: none;
+
+
+        
+    }
+    15%{
+        background-color: #ffffff00;
+        box-shadow: none;
+
+
+    }20%{
+        background-color: #e5aad9;
+        box-shadow: 0 0 10px 0;
+
+    }
+}
+
+@keyframes Hfade {
+    0%{
+        background-color: #e5aad9;
+        padding: 20px;
+
+        
+    }5%{
+
+        padding: 0;
+    }
+    40%
+    {
+        background-color: #e5aad9;
+        box-shadow: 0 0 10px 0;
+
+    }
+    50%{
+        background-color: #ffffff00;
+        box-shadow: none;
+    }
+    85%{
+        background-color: #ffffff00;
+        box-shadow: none;
+
+    }
+    90%{
+        background-color: #e5aad9;
+
+    }
+}
